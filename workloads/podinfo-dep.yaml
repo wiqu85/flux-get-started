@@ -46,8 +46,8 @@ spec:
         - --random-delay=false
         - --random-error=false
         env:
-        - name: Hello Flux
-          value: "Greetings human!"
+        - name: PODINFO_UI_MESSAGE
+          value: "Hello Flux!"
         livenessProbe:
           httpGet:
             path: /healthz
